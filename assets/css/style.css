@@ -44,9 +44,16 @@ header {
 	box-sizing: border-box;
 }
 
+.headersec {
+	background-color: #FFFFFF;
+	width:100%;
+	position: fixed top;
+}
+
 #header {
 	border-bottom: 2px, solid #cccccc;
 	margin-bottom: 15px
+	
 }
 
 header h1 {
@@ -61,6 +68,7 @@ header h1 {
 header nav {
 	display: inline-block;
 	vertical-align: middle;
+	background-color: white;
 	width:565px;
 	text-align: right;
 }
@@ -92,14 +100,19 @@ nav > ul li > a:hover {
 }
 
 .mainsection, .social {
-	float: left;
 	background-color: #ffffff;
 	border: 2px solid #dddddd;
 	box-sizing: border-box;
 	padding: 15px;
 }
 
+.mainsection {
+	float: left;
+	width: 66%;
+}
+
 .about {
+	float: left;
 	width:650px;
 	line-height:24px;
 }
@@ -117,8 +130,13 @@ nav > ul li > a:hover {
 }
 
 .social {
+	float: right;
 	width: 270px;
 	margin-left: 35px;
+}
+
+.sociallinks {
+	text-align: center;
 }
 
 form {
@@ -139,29 +157,36 @@ form {
 }
 
 .messageform {
-	border-radius: 5px;
+	border-radius: 2px;
 	width: 100%;
-	height: 15px;
+	height: 150px;
 	box-sizing: border-box;
 }
 
-.submitbttn {
+#mssgfrm {
+	height: 100px;
+	width: 400px;
+}
+
+.submitbttn > button {
 	padding: 10px 20px;
 	background-color: teal;
 	color: white;
 	font-weight: 900;
 }
 
-.submitbttn: hover {
+.submitbttn > button: hover {
 	background-color:#006d6d;
 	color: #c46a21;
 }
 
 .portfoliosquare {
 	float: left;
-	margin: 20px 0 0 20px;
+	margin: 10px 0 0 10px;
 	box-sizing: border-box;
 	border: 2px solid #dddddd;
+	width: 250px;
+	height: 215px;
 }
 
 .portfoliosquare  a {
@@ -169,33 +194,32 @@ form {
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-	padding: 15px 0;
+	padding: 10px 0;
 	background-color: teal;
 	font-size: 1.3em;
-	margin-top: 200px;
+	margin-top: 170px;
 	width: 100%;
 	box-sizing: border-box;
-	transition: 200ms all ease-in;
 }
 
 .p1 {
 	background-image: url("../images/portfolio1.jpg");
-	background-size: 275px 275px;
+	background-size: 275px, 275px;
 }
 
 .p2 {
 	background-image: url("../images/portfolio2.jpg");
-	background-size: 275px 275px;
+	background-size: 280px, 280px;
 }
 
 .p3 {
-	background-image: url("../images/portfolio4.jpg");
-	background-size: 275px 275px;
+	background-image: url("../images/portfolio3.jpeg");
+	background-size: 350px, 350px;
 }
 
 .p5 {
 	background-image: url("../images/portfolio5.jpg");
-	background-size: 275px 275px;
+	background-size: 300px, 300px;
 }
 
 .done: after {
