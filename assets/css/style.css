@@ -189,7 +189,7 @@ form {
 }
 
 .p3 {
-	background-image: url("../images/portfolio3.jpg");
+	background-image: url("../images/portfolio4.jpg");
 	background-size: 275px 275px;
 }
 
@@ -215,6 +215,10 @@ form {
 }
 
 #footersec {
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	height: 50px;
 	background-color: #666666;
 	border-top: 5px solid teal;
